@@ -18,6 +18,9 @@ const clock = () => {
     hours = hours - 12
     appm.innerHTML = "PM"
   }
+    if(hours > 0 && hours < 12){
+       appm.innerHTML = "AM"
+  }
 
   if(hours < 10){
     hours = "0" + hours
